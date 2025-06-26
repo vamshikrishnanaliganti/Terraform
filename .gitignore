@@ -1,0 +1,11 @@
+*.tfvars
+*.backup
+*.tfstate
+*.hcl
+*.txt
+*.exe
+*.terraform
+.terraform.lock.hcl
+.terraform/providers/*
+terraform.tfstate
+terraform.tfstate.backup
