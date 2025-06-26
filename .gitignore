@@ -6,4 +6,7 @@ cal .terraform directories
 *.tfstate.*
 
 # Terraform lock file
+.terraform.lock.hcl
+# documents
+*.doc
 
