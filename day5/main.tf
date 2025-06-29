@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "my-unique-bucket-name-7998498853"
+  bucket = "workspaceasdnskdaskdasjdasd"
   acl    = "private"
 
   tags = {
