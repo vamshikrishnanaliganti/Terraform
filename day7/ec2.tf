@@ -1,7 +1,7 @@
 
 resource "aws_instance" "public" {
 
-    ami = var.amiid
+    ami =  var.amiid 
     key_name = var.key
     instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.bastion-host.id]
@@ -17,13 +17,13 @@ resource "aws_iam_role" "ec2_role" {
   name = "private-ec2-role"
 
   assume_role_policy = jsonencode({
-    Version = "2012-10-17",
+    Version = "2012-10-17"
     Statement = [
       {
-        Effect = "Allow",
+        Effect = "Allow"
         Principal = {
           Service = "ec2.amazonaws.com"
-        },
+        }
         Action = "sts:AssumeRole"
       }
     ]
