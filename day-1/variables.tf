@@ -5,10 +5,6 @@ variable "amiid" {
 
 variable "key" {
     type    = string
-    default = ""
+    default = "vvv"
 }
 
-variable "instance_type" {
-    type    = string
-    default = ""
-}
