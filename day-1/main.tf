@@ -1,13 +1,13 @@
-resource "aws_s3_bucket" "mybucket" {
-  bucket = "myterraformbucket2025new"
+provider "aws" {
+  region = "us-east-1"
 }
 
-
 resource "aws_instance" "dev" {
-  ami           = var.amiid
-  instance_type = var.instance_type
-  key_name      = var.key
-  tags = {
-        Name = "dev"
+    ami = "ami-05ffe3c48a9991133"
+    instance_type = "t2.nano"
+    # key_name      = ""
+
+    tags = {
+      Name = "test"
     }
 }
